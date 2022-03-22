@@ -1,0 +1,256 @@
+
+
+:root {
+    --primary-color: rgb(226, 226, 228); 
+    --secondary-color: #043863; 
+    --container--color: #fff;
+    --text--color: #fff; 
+}
+
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+ 
+
+html {
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a, li {
+    list-style-type: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1100px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+/* right side style */
+
+.about .flex  {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 15px;
+}
+
+.about .summary {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.about .summary h2{
+    position: relative;
+    font-weight: 600;
+    font-size: 25px;
+    color: #023157;
+
+}
+
+.about .summary p {
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.right_side article{
+    padding-bottom: 25px;
+    border-bottom: 2px solid #043863;
+}
+
+.right_side section {
+    padding-bottom: 25px;
+    border-bottom: 2px solid #043863;
+}
+
+.skills h2 {
+    color: #023157;
+    position: relative;
+    margin: 20px 0;
+}
+ .skills .skills__items li {
+     position: relative;
+     margin: 15px;
+     font-size: 18px;
+     gap: 20px;
+     grid-template-columns: repeat(2, 1fr);
+     color: black;
+     display: grid;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* Education */
+
+ .education .title__3 {
+    position: relative;
+    margin: 10px 0;
+    padding: 5px 0;
+    color: #023157;
+    font-weight: 600;
+    font-size: 25px;
+ }
+
+.education .education__items {
+    position: relative;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+/* Header */
+
+.profile_container .imageBox {
+    overflow: hidden;
+    position: relative;
+    width: 180px;
+    height: 200px;
+}
+
+.profile_container .imageBox img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit:cover;
+}
+
+.left_side .profile_container h2 {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    font-size: 27px;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text--color);
+}
+
+.profile_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+
+/* contact */
+
+.container .contact__items .text {
+    position: relative;
+    display: flex; 
+    margin: 20px; 
+    justify-content: space-between;
+    color: rgb(15, 14, 14);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* fix later in wifi */
+.contact__items .m__title  {
+    font-size: 18px;
+    margin: 5px 0;
+    cursor: pointer;
+    color: rgb(238, 228, 228);
+}
+
+/* languages */
+
+.container .languages__items  {
+    position: relative;
+    display: flex; 
+    margin: 20px; 
+    justify-content: space-between;
+    color: rgb(15, 14, 14);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* hobbies */
+
+.container .hobbies__items {
+    display: grid; 
+    margin: 20px; 
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    color: rgb(15, 14, 14);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.title {
+    position: relative;
+    font-weight: 600;
+    color: var(--text--color);
+    font-size: 30px;
+    padding: 20px;
+    margin: 10px;
+    text-align: start;
+    left: -20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.title__2 {
+    position: relative;
+    color: var(--text--color);
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+    left: -20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* to fix title width */
+
+.hobbies__interests {
+    width: 360px;
+}
+
+.container .left_side {
+    position: relative;
+    background: var(--secondary-color);
+    padding: 40px;
+}
+
+.container .right_side {
+    margin-top: 50px;
+    position: relative;
+    background-color: var(--container--color);
+    padding: 40px;
+}
+
